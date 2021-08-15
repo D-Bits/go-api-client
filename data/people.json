@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Homer Simpson",
+        "job": "Control Room Engineer",
+        "stonecutter": true
+    },
+    {
+        "name": "Lenny Leonard",
+        "job": "Control Room Engineer",
+        "stonecutter": true
+    },
+    {
+        "name": "John I.Q. Nerdelbaum Frink Jr",
+        "job": "Mad Scientist",
+        "stonecutter": false
+    },
+    {
+        "name": "Carl Carlson",
+        "job": "Control Room Engineer",
+        "stonecutter": true
+    },
+    {
+        "name": "Clancy Wiggum",
+        "job": "Springfield Chief of Police",
+        "stonecutter": true
+    },
+    {
+        "name": "Apu Nahasapeemapetilon",
+        "job": "Manager, Kwik-E-Mart",
+        "stonecutter": false
+    }
+]
