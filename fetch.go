@@ -1,18 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 )
-
-type JSONdata struct {
-	name string `json:"name"`
-	job  string `json:"job"`
-	// Do they belong to the Stonecutters?
-	stonecutter bool `json:"stonecutter"`
-}
 
 func getData(endpoint string) {
 
@@ -23,22 +17,23 @@ func getData(endpoint string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	// store the response body in a variable
 	body, err := ioutil.ReadAll(res.Body)
 
-	// Log any errors
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// Create a file to write to
 	file, err := os.Create("./data/people.json")
-
+	// Write the JSON to an external file
 	file.WriteString(string(body))
 
-	// Log any errors
 	if err != nil {
 		log.Fatal(err)
+	} else {
+		fmt.Println("Download complete. Check the 'data' directory.")
 	}
 
 }
