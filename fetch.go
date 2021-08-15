@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func getData(endpoint string) {
+func getData(endpoint string, filename string) {
 
 	// make a GET request to fetch the JSON data
 	res, err := http.Get(endpoint)
@@ -26,7 +26,7 @@ func getData(endpoint string) {
 	}
 
 	// Create a file to write to
-	file, err := os.Create("./data/people.json")
+	file, err := os.Create("./data/" + filename + ".json")
 	// Write the JSON to an external file
 	file.WriteString(string(body))
 
