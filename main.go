@@ -16,7 +16,7 @@ func main() {
 	url, _ := reader.ReadString('\n')
 	// Remove the newline before passing into getData() function
 	formattedUrl := strings.TrimSuffix(url, "\n")
-	fmt.Print("Enter a file name: ")
+	fmt.Print("Enter a file name (without a file extension): ")
 	filename, _ := reader.ReadString('\n')
 	formattedFilename := strings.TrimSuffix(filename, "\n")
 
