@@ -23,7 +23,7 @@ func main() {
 	getData(formattedUrl, formattedFilename)
 
 	// Prompt the user to press enter to exit
-	fmt.Print("Press any key to exit.")
+	fmt.Print("Press enter to exit.")
 	reader.ReadString('\n')
 
 }
